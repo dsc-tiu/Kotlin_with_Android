@@ -6,34 +6,94 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <Button
         android:id="@+id/button"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:background="#C1BCBC"
-        android:gravity="center_horizontal"
-        android:text="Roll"
-        android:textAlignment="gravity"
-        android:textColor="#27DC27"
-        android:textDirection="inherit"
-        android:textSize="30sp"
+        android:layout_width="125dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="160dp"
+        android:background="#EDF3EC04"
+        android:text="Click me"
+        android:textColor="#24EC09"
+
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.132"
         app:layout_constraintStart_toStartOf="parent"
+
+        />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="141dp"
+        android:layout_height="117dp"
+        android:background="#EDF3EC04"
+        android:text="Click me"
+        android:textColor="#24EC09"
+
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toStartOf="parent"
+
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.742" />
+        app:layout_constraintVertical_bias="0.739" />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:foregroundGravity="center_horizontal"
-        android:src="@drawable/dice_6"
         android:id="@+id/dice_image"
+        android:layout_width="140dp"
+        android:layout_height="216dp"
+        android:foregroundGravity="center_horizontal"
+        android:src="@drawable/dice_4"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.793"
         tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/dice_image1"
+        android:layout_width="133dp"
+        android:layout_height="189dp"
+        android:foregroundGravity="center_horizontal"
+        android:src="@drawable/dice_3"
+        app:layout_constraintBottom_toTopOf="@+id/button1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.776"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.705"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="232dp"
+        android:layout_height="85dp"
+        android:text="Sum of two dice"
+        android:textSize="20sp"
+        android:textColor="#000f21"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.136" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sum"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.896" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
