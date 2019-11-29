@@ -11,6 +11,7 @@ import java.util.*
 class MainActivity : AppCompatActivity() {
     var randomInt: Int = 0
     var randomInt1: Int = 0
+    var sum: Int = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -22,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
 
         fun dice() {
-            val randomInt = Random().nextInt(6) + 1
+             randomInt = Random().nextInt(6) + 1
 
             val diceImages = when (randomInt) {
                 1 -> R.drawable.dice_1
@@ -52,7 +53,7 @@ class MainActivity : AppCompatActivity() {
 
 
     fun dice() {
-            val randomInt1 = Random().nextInt(6) + 1
+             randomInt1 = Random().nextInt(6) + 1
 
             val diceImages = when (randomInt1) {
                 1 -> R.drawable.dice_1
