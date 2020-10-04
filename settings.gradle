@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name='Mydice'
+rootProject.name='Dice Roller'
